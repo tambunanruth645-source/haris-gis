@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HARIS GIS</string>
+    <string name="my_location">Lokasi Saya</string>
+    <string name="layers">Lapisan Peta</string>
+    <string name="measure">Ukur Jarak</string>
+    <string name="add_marker">Tambah Titik</string>
+    <string name="offline_mode">Mode Offline Aktif</string>
+    <string name="search_hint">Cari lokasi atau koordinat...</string>
+</resources>

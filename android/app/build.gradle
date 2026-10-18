@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.haris.gis'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.haris.gis"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.preference:preference:1.2.1'
+
+    // Engine Peta Super Ringan (OpenStreetMap Native Android)
+    // Ringan, konsumsi memori rendah, dan mendukung offline tile cache otomatis
+    implementation 'org.osmdroid:osmdroid-android:6.1.18'
+
+    // Parser JSON untuk import/export format spasial GeoJSON
+    implementation 'com.google.code.gson:gson:2.10.1'
+}

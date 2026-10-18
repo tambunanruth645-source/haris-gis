@@ -1,0 +1,23 @@
+# Android & Gradle
+.gradle/
+build/
+android/build/
+android/app/build/
+*.apk
+*.aab
+
+# Local Configuration & Secrets
+.env
+local.properties
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.idea/
+*.iml
+.vscode/
+
+# Docker volumes / data
+pgdata/
+redisdata/
+miniodata/
